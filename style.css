@@ -2,22 +2,34 @@ body {
     font-family: sans-serif;
 }
 
-nav a {
-    color: grey;
+header {
+    display: block;
+    overflow: hidden;
+}
+
+header nav li a {
+    color: gray;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
     text-decoration: none;
-    margin: .7rem;
-    height: 50%;
+    font-size:14px;
 }
 
 nav a:hover{
     text-decoration: underline;
 }
 
-ul {
-    display: flex;
+header ul {
     list-style-type: none;
-    padding: 10px 10px;
+    overflow: none;
+    float: right;
 }
+
+header li {
+    float: left;
+}
+
 
 nav img{
     height: 35px;
@@ -32,35 +44,38 @@ nav img:hover{
     cursor: pointer;
 }
 
-#horizontal-center{
-        margin: auto;
-        width: 50%;
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #f1f1f1 ;
+    width: 100%;
+    overflow: hidden;
 }
 
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    -ms-transform: translateY(-30%);
-    transform: translateY(-30%);
-  }
-
-.searchbar{
-    height:45px;
-    border:none;
-    width:500px;
-    font-size:16px;
-    outline: none;
+footer nav li a {
+    color: gray;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size:14px;
 }
 
-button {
-    border: none;
-    font-size: 15pt;
-    padding: 0.5rem;
-    margin-top: 2rem;
-    color: grey;
+footer ul {
+    list-style-type: none;
+    display: block;
 }
 
-.right-align {
-    float: right;
-}
+
+
+
+
+
+
