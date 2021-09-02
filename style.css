@@ -1,5 +1,6 @@
 body {
     font-family: sans-serif;
+    margin-left: 0;
 }
 
 header {
@@ -8,7 +9,7 @@ header {
 }
 
 header nav li a {
-    color: gray;
+    color: black;
     display: block;
     text-align: center;
     padding: 10px 10px;
@@ -44,13 +45,45 @@ nav img:hover{
     cursor: pointer;
 }
 
+section {
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+}
 
+section div {
+    padding-top: 15px;
+}
 
+button {
+    color: gray;
+    border: none;
+    font-size: 18px;
+    padding: 8px 8px 8px 8px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
 
+button:hover {
+    cursor: pointer;
+}
 
+input {
+    width: 500px;
+    border-radius: 30px;
+    padding: 10px;
+    border-color: lightgray;
+    border-width: 1px;
+}
 
+input:hover{
+    box-shadow: 1px 1px 8px 1px lightgray;
+    outline: none;   
+}
 
-
+input:focus-within{
+    outline: none;
+}
 
 footer {
     position: fixed;
@@ -58,11 +91,15 @@ footer {
     background-color: #f1f1f1 ;
     width: 100%;
     overflow: hidden;
+    height: 10vh;
+}
+
+footer nav {
+    display: block;
 }
 
 footer nav li a {
     color: gray;
-    text-align: center;
     padding: 10px 10px;
     text-decoration: none;
     font-size:14px;
@@ -70,8 +107,19 @@ footer nav li a {
 
 footer ul {
     list-style-type: none;
-    display: block;
 }
+
+footer li {
+    display: inline-block;
+    float: left;
+}
+
+footer nav a{
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 
 
