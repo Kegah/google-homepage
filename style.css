@@ -86,38 +86,34 @@ input:focus-within{
 }
 
 footer {
+    display: flex;
     position: fixed;
     bottom: 0;
     background-color: #f1f1f1 ;
     width: 100%;
     overflow: hidden;
-    height: 10vh;
+    justify-content: space-between;
+    padding-right: 15px;
+
 }
 
-footer nav {
-    display: block;
-}
-
-footer nav li a {
+footer a {
     color: gray;
-    padding: 10px 10px;
     text-decoration: none;
-    font-size:14px;
+    padding: 15px 15px;
+
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 footer ul {
-    list-style-type: none;
-}
-
-footer li {
-    display: inline-block;
-    float: left;
-}
-
-footer nav a{
     display: flex;
-    flex-direction: row;
-}
+    list-style-type: none;
+  }
+
+
 
 
 
